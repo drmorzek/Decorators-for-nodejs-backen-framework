@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  test:
+    container_name: test
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8080:8080"
+    command: npm run start   
+
+  
+  
